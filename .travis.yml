@@ -1,0 +1,13 @@
+sudo: required
+
+language: c
+
+services:
+  - docker
+
+before_install:
+  - docker info
+  - docker built -t anonymint/alpine-openjdk
+
+script:
+  - docker run -it --rm anonymint/alpine-openjdk
