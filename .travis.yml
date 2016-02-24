@@ -5,6 +5,7 @@ language: c
 services:
   - docker
 
+# This will change in the future
 before_install:
   - docker info
   - docker built -t anonymint/alpine-openjdk
