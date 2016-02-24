@@ -8,7 +8,7 @@ services:
 # This will change in the future
 before_install:
   - docker info
-  - docker built -t anonymint/alpine-openjdk
+  - docker built -t anonymint/alpine-openjdk .
 
 script:
   - docker run -it --rm anonymint/alpine-openjdk
